@@ -35,6 +35,12 @@ h2{
 .search-button{
     border-radius: 5px;
     margin-top: 5%;
+    background-color: rgb(100, 100, 255);
+    color: white;
+}
+.search-button:hover{
+    color: white;
+    background-color: blue;
 }
 .list-history{
     margin-top: 5%;

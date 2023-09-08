@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./assets/style.css">
 	<title>Weather-Dashboard</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <header>
-       <h1>Weather Dashboard</h1> 
-    </header>
-    <section id="input-container" class="row">
-        <div class="col-lg-3 bg-light">
-            <h2>Search for a City:</h2>
-            <div><input class = "user-input" id = "user-location" style="width: 100%;" type = "text"></div>
-            <button id="submission" class="search-button" style="width: 100%;">Submit</button> 
-            <ul class="list-history"></ul>
-        </div>
-        <div id="current-weather" class="col-lg-3 bg-light" style="width: 65%;" class="row">
-            <div id="current-date-weather" class="mt-2">
-            </div>
-            <div id="location-forecast" class="card-deck mt-2">
-            </div>
-        </div>
-    </section>
-    <script src="./assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<header>
+		<h1>Weather Dashboard</h1>
+	</header>
+	<section id="input-container" class="row">
+		<div class="col-lg-3 bg-light">
+			<h2>Search for a City:</h2>
+			<input class="user-input" id="user-location" name="user-city" style="width: 100%;" type="text">
+			<button onclick="GetUserInfo()" id="user-submission" class="search-button" style="width: 100%;">Submit</button>
+			<h2 id="city-name">--london--</h2>
+			<ul id="list-history">
+				<li>trial</li>
+			</ul>
+		</div>
+		<div id="current-weather" class="col-lg-3 bg-light" style="width: 65%;" class="row">
+			<div id="current-date-weather" class="mt-2">
+				<h2>date</h2>
+			</div>
+			<h3 id="day-1">Temp City</h3>
+			<img src="" alt="" id="1-icon" class="weather-icon">
+			<h4 id="T-1">Temp: </h4>
+			<h4 id="w-1">Wind:</h4>
+			<h4 id="h-1">Humidity:</h4>
+
+			<h2>5-Day Forecast:</h2>
+			<div id="next-forecast" class="d-flex align-items-stretch">
+				<div id="forecast-container-1" class="flex-row">
+					<h3 id="day-2">temp date</h3>
+					<img src="" alt="" id="2-icon" class="weather-icon">
+					<h4 id="T-2">Temp: </h4>
+					<h4 id="w-2">Wind:</h4>
+					<h4 id="h-2">Humidity:</h4>
+				</div>
+
+				<div id="forecast-container-2" class="flex-row">
+					<h3 id="day-3">temp date</h3>
+					<img src="" alt="" id="3-icon" class="weather-icon">
+					<h4 id="T-3">Temp: </h4>
+					<h4 id="w-3">Wind:</h4>
+					<h4 id="h-3">Humidity:</h4>
+				</div>
+
+				<div id="forecast-container-3" class="flex-row">
+					<h3 id="day-4">temp date</h3>
+					<img src="" alt="" id="4-icon" class="weather-icon">
+					<h4 id="T-4">Temp: </h4>
+					<h4 id="w-4">Wind:</h4>
+					<h4 id="h-4">Humidity:</h4>
+				</div>
+
+				<div id="forecast-container-4" class="flex-row">
+					<h3 id="day-5">temp date</h3>
+					<img src="" alt="" id="5-icon" class="weather-icon">
+					<h4 id="T-5">Temp: </h4>
+					<h4 id="w-5">Wind:</h4>
+					<h4 id="h-5">Humidity:</h4>
+				</div>
+
+				<div id="forecast-container-5" class="flex-row">
+					<h3 id="day-6">temp date</h3>
+					<img src="" alt="" id="6-icon" class="weather-icon">
+					<h4 id="T-6">Temp: </h4>
+					<h4 id="w-6">Wind:</h4>
+					<h4 id="h-6">Humidity:</h4>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./assets/script.js"></script>
 </body>
+
 </html>
