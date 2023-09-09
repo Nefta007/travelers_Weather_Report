@@ -1,5 +1,5 @@
 * {
-	border: solid red 2px;
+	/* border: solid red 2px; */
 }
 header{
     color: white;
@@ -50,6 +50,14 @@ h2{
 }
 #location-forecast{
     position: absolute;
+}
+.flex-row{
+    background-color: grey;
+    color: aliceblue;
+    width: 17%;
+}
+#next-forecast{
+    justify-content: space-between;
 }
 @media screen and(max-width: 900px){
     body{
