@@ -51,6 +51,7 @@ h2{
 }
 #current-weather{
     margin-left: 2%;
+    background-color: grey;
 }
 #location-forecast{
     position: absolute;
@@ -62,6 +63,13 @@ h2{
 }
 #next-forecast{
     justify-content: space-between;
+}
+button[type=button]{
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 95px ;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .child{
     display: inline-block;
