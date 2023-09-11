@@ -51,13 +51,13 @@ h2{
 }
 #current-weather{
     margin-left: 2%;
-    background-color: grey;
+    background-color: rgb(190, 190, 190);
 }
 #location-forecast{
     position: absolute;
 }
 .flex-row{
-    background-color: rgb(44, 44, 44);
+    background-color: grey;
     color: aliceblue;
     width: 17%;
 }
