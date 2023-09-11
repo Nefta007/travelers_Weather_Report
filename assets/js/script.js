@@ -125,5 +125,5 @@ var displayHistory = () => {
     //when page is reloaded local storage is cleared
     window.onbeforeunload = function (e) { localStorage.clear(); };
 }
-
+//when submit is clicked go to usercity function
 userButton.addEventListener("click", UserCity);
