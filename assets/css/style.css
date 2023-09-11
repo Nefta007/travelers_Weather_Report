@@ -57,7 +57,7 @@ h2{
     position: absolute;
 }
 .flex-row{
-    background-color: grey;
+    background-color: rgb(44, 44, 44);
     color: aliceblue;
     width: 17%;
 }
